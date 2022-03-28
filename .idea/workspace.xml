@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="test commit" />
+    <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="test commit">
+      <change afterPath="$PROJECT_DIR$/src/home/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/login/LoginForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/login/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registration/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/registration" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -53,6 +62,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/registration" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/profile" />
       <recent name="$PROJECT_DIR$/src/registration" />
@@ -154,6 +168,7 @@
       <workItem from="1641817907405" duration="7907000" />
       <workItem from="1648330018313" duration="1368000" />
       <workItem from="1648497099265" duration="1496000" />
+      <workItem from="1648499838053" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1641548223999</created>
