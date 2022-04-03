@@ -1,7 +1,11 @@
 import React from "react";
 import './registration.css';
+import PropTypes from 'prop-types';
 
 export class RegistrationForm extends React.Component {
+    static propTypes = {
+        navigateTo: PropTypes.string.isRequired
+    }
     state = { email: '', name: '', password: '' };
     constructor(props) {
         super();

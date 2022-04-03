@@ -1,7 +1,11 @@
 import React from "react";
 import './login.css';
+import PropTypes from 'prop-types';
 
 export class LoginForm extends React.Component {
+    static propTypes = {
+        navigateTo: PropTypes.string
+    }
     state = { email: '', password: '' };
     constructor(props) {
         super();
