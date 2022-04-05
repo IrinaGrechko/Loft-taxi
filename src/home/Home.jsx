@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import mapboxgl from 'mapbox-gl'
 import'./home.css'
+import {withAuth} from "../AuthContext";
 
 export class Home extends Component {
     map = null;
@@ -29,3 +30,5 @@ export class Home extends Component {
         )
     }
 };
+
+export const HomeWithAuth = withAuth(Home);
