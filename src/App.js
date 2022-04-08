@@ -1,10 +1,11 @@
-import './App.css';
 import React from "react";
-import {Home, HomeWithAuth} from "./home/Home";
-import {Profile, ProfileWithAuth} from "./profile/Profile";
-import {LoginForm, LoginFormWithAuth} from "./login/LoginForm";
-import {RegistrationForm, RegistrationFormWithAuth} from "./registration/RegistrationForm";
+import {HomeWithAuth} from "./home/Home";
+import {ProfileWithAuth} from "./profile/Profile";
+import {LoginFormWithAuth} from "./login/LoginForm";
+import {RegistrationFormWithAuth} from "./registration/RegistrationForm";
 import {withAuth} from "./AuthContext";
+import HeaderMenu from "./home/HeaderMenu";
+import {Stack} from "@mui/material";
 
 class App extends React.Component {
   constructor() {
@@ -16,9 +17,11 @@ class App extends React.Component {
       registration: (props) => <RegistrationFormWithAuth {...props}/>
     }
   }
+
   state = { currentPage: "login" };
+
   navigateTo = (page) => {
-    if (this.props.isLoggedIn) {
+    if (this.props.isLoggedIn || page === "registration") {
       this.setState({currentPage: page});
     } else {
       this.setState({currentPage: "login"});
@@ -32,32 +35,16 @@ class App extends React.Component {
 
   render() {
     return <>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <button onClick={() => {this.navigateTo("home")}}>
-                Карта
-              </button>
-            </li>
-            <li>
-              <button onClick={() => {this.navigateTo("profile")}}>
-                Профиль
-              </button>
-            </li>
-            <li>
-              <button onClick= {this.unauthenticate}>
-                Выйти
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section>
-          {this.PAGES[this.state.currentPage]({ navigate: this.navigateTo})}
-        </section>
-      </main>
+      <Stack>
+        {
+          this.props.isLoggedIn ? (<HeaderMenu unauthenticate = {this.unauthenticate} navigateTo = {this.navigateTo}/>) : ''
+        }
+        <main>
+          <section>
+            {this.PAGES[this.state.currentPage]({ navigate: this.navigateTo})}
+          </section>
+        </main>
+      </Stack>
     </>
   }
 }

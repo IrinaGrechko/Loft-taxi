@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="authenticate">
-      <change afterPath="$PROJECT_DIR$/src/AuthContext.spec.jsx" afterDir="false" />
+    <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="add tests logIn logOut">
+      <change afterPath="$PROJECT_DIR$/src/home/HeaderMenu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/LoginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +79,7 @@
       <recent name="$PROJECT_DIR$/src/login" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.AuthContext.#logIn.sets 'isLoggedIn' to false">
+  <component name="RunManager" selected="Jest.AuthContext.#logOut">
     <configuration name="App.renders correctly" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -115,6 +124,20 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="AuthContext.#logOut" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/AuthContext.spec.jsx" />
+      <test-names>
+        <test-name value="AuthContext" />
+        <test-name value="#logOut" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Home.render correctly" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -129,27 +152,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Profile.renders correctly" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Profile.spec.jsx" />
-      <test-names>
-        <test-name value="Profile" />
-        <test-name value="renders correctly" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.AuthContext.#logOut" />
         <item itemvalue="Jest.AuthContext.#logIn.sets 'isLoggedIn' to false" />
         <item itemvalue="Jest.App.when clicked to navigation buttons.opens the corresponding page" />
         <item itemvalue="Jest.App.renders correctly" />
         <item itemvalue="Jest.Home.render correctly" />
-        <item itemvalue="Jest.Profile.renders correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +177,8 @@
       <workItem from="1648499838053" duration="1503000" />
       <workItem from="1649091371987" duration="7327000" />
       <workItem from="1649188043953" duration="3253000" />
-      <workItem from="1649257495314" duration="1408000" />
+      <workItem from="1649257495314" duration="11753000" />
+      <workItem from="1649362456297" duration="8871000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1641548223999</created>
@@ -205,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649188855919</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add tests logIn logOut">
+      <created>1649259182336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649259182337</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +245,8 @@
     <MESSAGE value="fix propTypes and add theme" />
     <MESSAGE value="add mapbox" />
     <MESSAGE value="authenticate" />
-    <option name="LAST_COMMIT_MESSAGE" value="authenticate" />
+    <MESSAGE value="add tests logIn logOut" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests logIn logOut" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/loft_taxi$About_renders_correctly.info" NAME="About.renders correctly Coverage Results" MODIFIED="1641560646535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

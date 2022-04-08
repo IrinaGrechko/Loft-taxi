@@ -16,7 +16,7 @@ export class RegistrationForm extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
         console.log(this.state.email + " " + this.state.password);
-        this.navigateTo("home");
+        this.props.navigate("home");
     }
 
     handleChange = event => {
@@ -24,7 +24,7 @@ export class RegistrationForm extends React.Component {
     }
 
     navigateToLoginForm = () => {
-        this.navigateTo("login");
+        this.props.navigate("login");
     }
 
     render() {
