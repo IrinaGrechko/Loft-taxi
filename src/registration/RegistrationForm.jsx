@@ -1,7 +1,7 @@
 import React from "react";
 import './registration.css';
 import PropTypes from 'prop-types';
-import {withAuth} from "../AuthContext";
+import {connect} from 'react-redux';
 
 export class RegistrationForm extends React.Component {
     static propTypes = {
@@ -73,4 +73,4 @@ export class RegistrationForm extends React.Component {
     }
 }
 
-export const RegistrationFormWithAuth = withAuth(RegistrationForm);
+export const RegistrationFormWithAuth = connect(null, null)(RegistrationForm);

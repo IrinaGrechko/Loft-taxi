@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="add tests logIn logOut">
-      <change afterPath="$PROJECT_DIR$/src/home/HeaderMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthContext.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/login/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/LoginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -73,6 +78,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/reducers" />
       <recent name="$PROJECT_DIR$/src/profile" />
       <recent name="$PROJECT_DIR$/src/registration" />
       <recent name="$PROJECT_DIR$/src/home" />

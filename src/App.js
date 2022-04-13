@@ -3,7 +3,8 @@ import {HomeWithAuth} from "./home/Home";
 import {ProfileWithAuth} from "./profile/Profile";
 import {LoginFormWithAuth} from "./login/LoginForm";
 import {RegistrationFormWithAuth} from "./registration/RegistrationForm";
-import {withAuth} from "./AuthContext";
+import {connect} from 'react-redux';
+import {logOut} from './actions';
 import HeaderMenu from "./home/HeaderMenu";
 import {Stack} from "@mui/material";
 
@@ -49,4 +50,7 @@ class App extends React.Component {
   }
 }
 
-export default withAuth(App);
+export default connect(
+  (state) => ({isLoggedIn: state.auth.isLoggedIn}),
+  {logOut}
+)(App);
