@@ -3,11 +3,9 @@ import './login.css';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {authenticate} from '../actions';
+import {Link, Navigate} from 'react-router-dom'
 
 export class LoginForm extends React.Component {
-  static propTypes = {
-    navigate: PropTypes.func
-  }
 
   authenticate = (event) => {
     event.preventDefault();
@@ -15,15 +13,11 @@ export class LoginForm extends React.Component {
     this.props.authenticate(email.value, password.value);
   }
 
-  navigateToRegisterForm = () => {
-    this.props.navigate("registration");
-  }
-
   render() {
     //const {email, password} = this.state;
     return (
       <>{
-        this.props.isLoggedIn ? this.props.navigate("home") : (
+        this.props.isLoggedIn ? <Navigate to="/map"/> : (
           <div className="login">
             <form onSubmit={this.authenticate}>
               <h4>Войти</h4>
@@ -47,7 +41,7 @@ export class LoginForm extends React.Component {
             </form>
             <div>
               <p>Новый пользователь?</p>
-              <p onClick={this.navigateToRegisterForm}>Зарегистрируйтесь</p>
+              <Link to="/registration">Зарегистрируйтесь</Link>
             </div>
           </div>
         )

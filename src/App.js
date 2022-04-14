@@ -7,6 +7,8 @@ import {connect} from 'react-redux';
 import {logOut} from './actions';
 import HeaderMenu from "./home/HeaderMenu";
 import {Stack} from "@mui/material";
+import {Link, Route, Routes} from 'react-router-dom'
+import {PrivateRoute} from './PrivateRoute'
 
 class App extends React.Component {
   constructor() {
@@ -21,28 +23,28 @@ class App extends React.Component {
 
   state = { currentPage: "login" };
 
-  navigateTo = (page) => {
-    if (this.props.isLoggedIn || page === "registration") {
-      this.setState({currentPage: page});
-    } else {
-      this.setState({currentPage: "login"});
-    }
-  };
-
   unauthenticate = () => {
     this.props.logOut();
-    this.navigateTo('login');
   };
 
   render() {
     return <>
       <Stack>
         {
-          this.props.isLoggedIn ? (<HeaderMenu unauthenticate = {this.unauthenticate} navigateTo = {this.navigateTo}/>) : ''
+          this.props.isLoggedIn ? (<HeaderMenu unauthenticate = {this.unauthenticate}/>) : ''
         }
         <main>
           <section>
-            {this.PAGES[this.state.currentPage]({ navigate: this.navigateTo})}
+            <Routes>
+              <Route exact path="/" element={<LoginFormWithAuth/>}/>
+              <Route exact path="/map" element={
+                <PrivateRoute><HomeWithAuth/></PrivateRoute>
+              }/>
+              <Route exact path="/profile" element={
+                <PrivateRoute><ProfileWithAuth/></PrivateRoute>
+              }/>
+              <Route exact path="/registration" element={<RegistrationFormWithAuth/>}/>
+            </Routes>
           </section>
         </main>
       </Stack>
