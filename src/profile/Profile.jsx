@@ -1,8 +1,8 @@
 import React from 'react'
-import {withAuth} from "../AuthContext";
+import {connect} from 'react-redux';
 
 export const Profile = () => {
-    return <>Профиль пользователя</>
+  return <>Профиль пользователя</>
 };
 
-export const ProfileWithAuth = withAuth(Profile);
+export const ProfileWithAuth = connect(null, null)(Profile);
