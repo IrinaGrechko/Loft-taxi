@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import mapboxgl from 'mapbox-gl'
 import'./home.css'
-import {withAuth} from "../AuthContext";
+import {connect} from 'react-redux'
 
 export class Home extends Component {
     map = null;
@@ -29,4 +29,4 @@ export class Home extends Component {
     }
 };
 
-export const HomeWithAuth = withAuth(Home);
+export const HomeWithAuth = connect(null, null)(Home);

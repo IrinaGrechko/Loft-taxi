@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="add tests logIn logOut">
-      <change afterPath="$PROJECT_DIR$/src/home/HeaderMenu.jsx" afterDir="false" />
+    <list default="true" id="1d85a006-d5d5-449b-ae14-f285bc80f3f9" name="Changes" comment="add redux-saga">
+      <change afterPath="$PROJECT_DIR$/src/authSaga.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recordSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/login/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/LoginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/registration/RegistrationForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +20,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="third-week" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,25 +71,21 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/reducers" />
       <recent name="$PROJECT_DIR$/src/profile" />
       <recent name="$PROJECT_DIR$/src/registration" />
       <recent name="$PROJECT_DIR$/src/home" />
       <recent name="$PROJECT_DIR$/src/login" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.AuthContext.#logOut">
-    <configuration name="App.renders correctly" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.authSaga.spec.js">
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/App.spec.jsx" />
-      <test-names>
-        <test-name value="App" />
-        <test-name value="renders correctly" />
-      </test-names>
+      <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
     <configuration name="App.when clicked to navigation buttons.opens the corresponding page" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
@@ -138,27 +132,34 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Home.render correctly" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="authSaga.spec.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Home.spec.jsx" />
-      <test-names>
-        <test-name value="Home" />
-        <test-name value="render correctly" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/authSaga.spec.js" />
       <method v="2" />
     </configuration>
+    <configuration name="authSaga.spec.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/authSaga.spec.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Jest.App.when clicked to navigation buttons.opens the corresponding page" />
+      <item itemvalue="Jest.AuthContext.#logIn.sets 'isLoggedIn' to false" />
+      <item itemvalue="Jest.AuthContext.#logOut" />
+      <item itemvalue="Node.js.authSaga.spec.js" />
+      <item itemvalue="Jest.authSaga.spec.js" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.authSaga.spec.js" />
+        <item itemvalue="Node.js.authSaga.spec.js" />
         <item itemvalue="Jest.AuthContext.#logOut" />
         <item itemvalue="Jest.AuthContext.#logIn.sets 'isLoggedIn' to false" />
         <item itemvalue="Jest.App.when clicked to navigation buttons.opens the corresponding page" />
-        <item itemvalue="Jest.App.renders correctly" />
-        <item itemvalue="Jest.Home.render correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649259182337</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add redux authenticate">
+      <created>1649862246418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649862246418</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add redux-saga">
+      <created>1650057272334</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650057272334</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,9 +261,12 @@
     <MESSAGE value="add mapbox" />
     <MESSAGE value="authenticate" />
     <MESSAGE value="add tests logIn logOut" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests logIn logOut" />
+    <MESSAGE value="add redux authenticate" />
+    <MESSAGE value="add redux-saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="add redux-saga" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/loft_taxi$authSaga_spec_js.info" NAME="authSaga.spec.js Coverage Results" MODIFIED="1650112536945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/loft_taxi$About_renders_correctly.info" NAME="About.renders correctly Coverage Results" MODIFIED="1641560646535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
